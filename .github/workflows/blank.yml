@@ -9,10 +9,10 @@ jobs:
 
     steps:
       - name: Clone the Code
-        uses: actions/checkpoint@v2
+        uses: actions/checkpoint@v1
 
       - name: Install NodeJS
-        uses: actions/setup-node@2
+        uses: actions/setup-node@v1
         with:
           node-version: 16
 
