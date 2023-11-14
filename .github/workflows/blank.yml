@@ -1,0 +1,23 @@
+name: SchitzuCultureActions
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone the Code
+        uses: actions/checkpoint@v2
+
+      - name: Install NodeJS
+        uses: actions/setup-node@2
+        with:
+          node-version: 16
+
+      - name: Run the Actual JS File
+        run: node index.js
+
+        
+  
